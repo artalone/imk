@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>submitNotif</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function dropdownFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .success{
+            background-color: rgba(66, 227, 97, 0.3);
+            margin-top: 10%;
+            margin-left: 25%;
+            /*margin-right: 50%;*/
+            position: relative;
+            border: solid;
+            border-color: #3ccb59;
+            width:49%;
+            height: 50px;
+            border-radius: 25px;
+            text-align: center;
+            /*padding-top: 8px;*/
+            padding-bottom: 5px;
+            /*padding-left: 20px;*/
+        }
+    </style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index (user).html"><img src="pic/logo.png" height="15px" width="100px"></a>
+    <!--<a href="#home">Home</a>-->
+    <a href="browse.html">Browse</a>
+    <a href="contact.html">Contact</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="forum.html">Forum</a>
+    <a href="submit1.html">Submit</a>
+    <div class="rightnav" style="float: right">
+
+
+        <div class="dropdown">
+            <button onclick="dropdownFunction()" class="dropbtn">Zouls99</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="profile2 (user).html">Profile</a>
+                <a href="index.html">Sign out</a>
+            </div>
+        </div>
+
+    </div>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="success"><br>
+<span style="display: inline"><img src="pic/centang.png"width="20px" height="20px"></span>
+    <span style="display: inline;font-family: 'Calibri Light'"><b>SUBMIT SUCCESS</b></span>
+</div>
+
+</body>
+</html>

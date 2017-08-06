@@ -1,0 +1,168 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+	margin-bottom:50px ;
+	position: relative;
+}
+
+/*body{*/
+	/*!*background: #dedede;*!*/
+	/*font-family: 'Helvetica', arial, sans-serif;*/
+
+	/*font-size: 15px;*/
+/*}*/
+
+.container{
+	/*margin: 20px auto;*/
+	/*background: #fff;*/
+	overflow: hidden;
+	/*padding: 10px;*/
+}
+
+.imgcontainer{
+
+}
+
+.form1{
+	position: relative;
+	/*padding-left: 35%;*/
+	/*padding-right: 35%;*/
+	border: 0px solid black;
+	background-color: rgba(163,177,162,0.3);
+	width:500px;
+	height: auto;
+	margin-left: 30%;
+	margin-top: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+
+.header{
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* Main */
+
+	.middle{
+		width: 100%;
+		/*padding: 10px;*/
+		/*margin: 10px;*/
+	}
+		.middle img{
+			max-width: 100%;
+			height: auto;
+		}
+
+		.middle a{
+			font-weight: bold;
+		}
+
+.footer{
+	clear: both;
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+}
+
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* untuk ukuran 1080px kebawah */
+@media screen and (max-width: 1080px) {
+	
+	.container {
+		width: 100%;
+	}
+	.middle {
+		width: 100%;
+		float: right;
+	}
+	.responsive {
+		padding: 0 6px;
+		float: left;
+		width: 33.3333%;
+		margin-bottom:50px ;
+		position: relative;
+	}
+
+	.imgcontainer{
+		padding: 0 6px;
+		/*float: left;*/
+		width: 400px;
+		height: 300px;
+		margin-bottom:50px ;
+		position: relative;
+
+	}
+
+	.form1{
+		width: 300px;
+		overflow: hidden;
+	}
+
+	.imgcontainer{
+		width: 250px;
+		/*padding-left: 100px;*/
+	}
+
+
+}
+
+
+/* untuk ukuran layar 700px kebawah */
+@media screen and (max-width: 780px) {
+	
+	.header, 
+	.footer{
+		text-align: center;
+	}
+	
+	.middle {
+		width: auto;
+		float: none;
+	}
+	.responsive {
+		padding: 0 6px;
+		float: left;
+		width: 49.99999%;
+		margin-bottom:50px ;
+		position: relative;
+	}
+
+	.imgcontainer{
+		padding: 0 6px;
+		/*float: left;*/
+		width: 200px;
+		height: 200px;
+		margin-bottom:50px ;
+		position: relative;
+
+	}
+
+	.form1{
+		width:200px;
+		height: auto;
+	}
+
+	.form-box-contact{
+		width: 500px;
+	}
+
+
+
+}
+
+

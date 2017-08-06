@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>edit profile</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+    <style>
+        /* Full-width input fields */
+        input[type=text]:focus, input[type=password]  {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type=date]{
+            width: 60%;
+            padding: 14px 20px;
+            margin: 8px 0px 0px 30px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /* Set a style for all buttons */
+        button {
+            background-color: #5c7dff;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0px 0px 30px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+            padding: 14px 20px;
+            margin-left: 30px;
+            background-color: #f44336;
+        }
+
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn,.signupbtn {
+            margin-left:0%; width:15%;
+        }
+
+        /* Add padding to container elements */
+        .container {
+            padding: 16px;
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .clearfix {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            line-height: 150%;
+            font-size: .85em;
+        }
+
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+            .cancelbtn, .signupbtn {
+                width: 100%;
+            }
+        }
+
+        .formreg{
+            position: relative;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index (user).html"><img src="pic/logo.png" height="15px" width="100px"></a>
+    <!--<a href="#home">Home</a>-->
+    <a href="browse.html">Browse</a>
+    <a href="contact.html">Contact</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="forum.html">Forum</a>
+    <a href="submit1.html">Submit</a>
+    <div class="rightnav" style="float: right">
+
+
+        <div class="dropdown">
+            <button onclick="dropdownFunction()" class="dropbtn">Zouls99</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="profile2 (user).html">Profile</a>
+                <a href="index.html">Sign out</a>
+            </div>
+        </div>
+
+    </div>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+</div>
+
+<div class="formreg">
+  <h3>Edit Profile</h3>
+<form action="/action_page.php" style="border:1px solid #ccc">
+    <div class="container">
+		<label><b>Edit Full name</b></label>
+        <input type="text" placeholder="Edit Full name" name="fullname" required>
+	
+        <label><b>Edit Username</b></label>
+        <input type="text" placeholder="Edit Username" name="username" required>
+
+        <label><b>Edit Email</b></label>
+        <input type="text" placeholder="Edit Email" name="email" required>
+
+        <label><b>New Password</b></label>
+        <input type="password" placeholder="Enter New Password" name="psw" required>
+
+        <label><b>Repeat New Password</b></label>
+        <input type="password" placeholder="Repeat New Password" name="psw-repeat" required>
+        <!--<div class="field1" style="width: 420px; height: 120px">-->
+                <label style="text-align: center"><b>Gender</b></label>
+				<br>
+				
+				<select id="gender" name="gender" style="margin-left:42%; width:15%; margin-bottom:10px">
+                    <option value>Select Gender</option>
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                </select>
+				<br>
+				
+                <label style="text-align: center"><b>Date of Birth</b></label>
+                <input type="date" name="bday" style="text-align: center; margin-left:42%; width:15%;">
+
+        <!--</div>-->
+        <br>
+        <div class="clearfix"><br>
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button onclick="location.href='profile2 (user).html'" type="submit" class="signupbtn">Submit</button>
+        </div>
+    </div>
+</form>
+</div>
+
+</body>
+</html>

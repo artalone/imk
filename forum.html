@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="css/index.css">
+ <script>
+	 function myFunction() {
+		 var x = document.getElementById("myTopnav");
+		 if (x.className === "topnav") {
+			 x.className += " responsive";
+		 } else {
+			 x.className = "topnav";
+		 }
+	 }
+
+	 function dropdownFunction() {
+		 document.getElementById("myDropdown").classList.toggle("show");
+	 }
+
+	 // Close the dropdown menu if the user clicks outside of it
+	 window.onclick = function(event) {
+		 if (!event.target.matches('.dropbtn')) {
+			 var dropdowns = document.getElementsByClassName("dropdown-content");
+			 var i;
+			 for (i = 0; i < dropdowns.length; i++) {
+				 var openDropdown = dropdowns[i];
+				 if (openDropdown.classList.contains('show')) {
+					 openDropdown.classList.remove('show');
+				 }
+			 }
+		 }
+	 }
+ </script>
+<style> 
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+   
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+#test{
+	position: relative;
+	padding-left: 1%;
+	height: 10%;
+	width: 40%;
+	background-color:#f5f5f0;
+	border :initial;
+	border-width: 1px;
+	border-radius: 8px;
+	margin-left:1%;
+ }
+ 
+ @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v27/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  font-size:25px; 
+  margin-left:1%;
+}
+
+#forum{
+	font-size: 100%;
+}
+ 
+</style>
+</head>
+
+
+<body>
+<div class="topnav" id="myTopnav">
+	<a href="index.html"><img src="pic/logo.png" height="15px" width="100px"></a>
+	<!--<a href="#home">Home</a>-->
+	<a href="browse.html">Browse</a>
+	<a href="contact.html">Contact</a>
+	<a href="aboutus.html">About Us</a>
+	<a href="forum.html">Forum</a>
+	<a onclick="alert('You must Login First to Submit portofolio')">Submit</a>
+	<div class="rightnav" style="float: right">
+		<a href="login.html">Login</a>
+		<a href="register.html">Register</a>
+	</div>
+	<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+<h1 style="font-style:bold; font-size:25px; margin-left:1%;">Forum</h1>
+
+<form>
+  <i class="material-icons">search</i><input type="text" name="search" placeholder="Search..">
+</form>
+<p style="font-style:bold; font-size:25px; margin-left:1%;">ArtAlone</p>
+	<div id="test" style=" margin-top: 0%; margin-bottom:3%">
+			<a href="browse.html" id="forum">Dev</a> 
+			<p id="forum">blebleble1 </p>
+	</div>
+	
+	<div id="test" style="margin-top: 0%; margin-bottom:3%">
+			<a href="browse.html">Dev</a>
+			<p>blebleble </p>
+		
+	</div>
+	<div id="test" style="margin-top: 3%">
+			<a href="browse.html">Dev</a>
+			<p>blebleble </p>
+		
+	</div>
+	<div id="test" style=" margin-top: 3%">
+			<a href="browse.html">Dev</a>
+			<p>blebleble </p>
+	</div>
+	
+	
+<p style="font-style:bold; font-size:25px; margin-top: 5%; margin-left:1%;">Senior Members</p>
+	<div id="test" style=" margin-top: 0%; margin-bottom:3%">
+			<a id="forum">Dev</a> 
+			<p id="forum">blebleble1 </p>
+	</div>
+	
+	<div id="test" style=" margin-top: 0%; margin-bottom:3%">
+			<a>Dev</a>
+			<p>blebleble </p>
+		
+	</div>
+	<div id="test" style="margin-top: 3%">
+			<a>Dev</a>
+			<p>blebleble </p>
+		
+	</div>
+	<div id="test" style="margin-top: 3%">
+			<a>Dev</a>
+			<p>blebleble </p>
+	</div>
+	
+	
+	
+<p style="font-style:bold; font-size:25px; margin-top: 5%; margin-left:1%;">Junior Members</p>
+	<div id="test" style="margin-top: 0%; margin-bottom:3%">
+			<a id="forum">Dev</a> 
+			<p id="forum">blebleble1 </p>
+	</div>
+	
+	<div id="test" style=" margin-top: 0%; margin-bottom:3%">
+			<a>Dev</a>
+			<p>blebleble </p>
+		
+	</div>
+	<div id="test" style="margin-top: 3%">
+			<a>Dev</a>
+			<p>blebleble </p>
+		
+	</div>
+	<div id="test" style="margin-top: 3%">
+			<a>Dev</a>
+			<p>blebleble </p>
+	</div>
+	
+	
+	
+<p style="font-style:bold; font-size:25px; margin-top: 5%; margin-left:1%;">Community</p>
+	<div id="test" style=" margin-top: 0%; margin-bottom:3%">
+			<a id="forum">Dev</a> 
+			<p id="forum">blebleble1 </p>
+	</div>
+	
+	<div id="test" style=" margin-top: 0%; margin-bottom:3%">
+			<a>Dev</a>
+			<p>blebleble </p>
+		
+	</div>
+	<div id="test" style="margin-top: 3%">
+			<a>Dev</a>
+			<p>blebleble </p>
+		
+	</div>
+	<div id="test" style="margin-top: 3%; margin-bottom: 10%">
+			<a>Dev</a>
+			<p>blebleble </p>
+	</div>
+	
+	
+
+	</body>
+</html>
